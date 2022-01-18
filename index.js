@@ -9,7 +9,7 @@ const chromeDriver = require('chromedriver');
     console.log({title});
 
     // timeout is in milliseconds
-    driver.manage().setTimeouts({implicit: 500.9 });
+    driver.manage().setTimeouts({implicit: 500 });
     driver.manage().window().maximize();
 
     let searchBox = await driver.findElement(By.name('q'));
